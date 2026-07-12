@@ -662,11 +662,21 @@ local function update(dt)
     end
 end
 
+-- The stage is DITHERED, not black. Portraits obey the house palette
+-- (dark bodies, white eye pixels) because the same artFn also draws
+-- the field sprite -- and a dark body on a black backdrop is an
+-- invisible silhouette with floating eyes. A mid-gray stage lets one
+-- monster definition read in both battle engines.
+local STAGE_Y <const> = 40
+local STAGE_H <const> = 128
+
 local function draw()
     gfx.setDrawOffset(Kit.sx, Kit.sy)
     gfx.setColor(gfx.kColorBlack)
     gfx.fillRect(-4, -4, 408, 248)
+    Gfx.fill(8, STAGE_Y, 384, STAGE_H, 3)
     gfx.setColor(gfx.kColorWhite)
+    gfx.drawRect(8, STAGE_Y, 384, STAGE_H)
     gfx.drawRect(4, 4, 392, 232)
     for i = 1, B.nfoe do
         local s = slots[i]
