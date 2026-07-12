@@ -1,0 +1,7 @@
+name=Slice
+author=Simon Frost
+description=Lore engine vertical slice: a chunked overworld walkabout.
+bundleID=com.sdwfrost.lore.slice
+version=0.1
+buildNumber=1
+imagePath=launcher

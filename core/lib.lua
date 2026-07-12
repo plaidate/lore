@@ -1,0 +1,21 @@
+-- Lore core: one import for the shared modules, dependency-ordered.
+
+import "CoreLibs/graphics"
+import "CoreLibs/crank"
+
+import "lutil"
+import "harness"
+import "lgfx"
+import "lmap"
+import "lcam"
+import "lact"
+import "lkit"
+import "lstate"
+import "lui"
+import "lscript"
+import "lparty"
+import "lsnd"
+import "lmusic"
+import "lenc"
+import "lturn"
+import "laction"

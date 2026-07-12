@@ -1,0 +1,7 @@
+name=Stoat
+author=Simon Frost
+description=Lore action proof: an ermine drives the rat clan from three winter fields.
+bundleID=com.sdwfrost.lore.stoat
+version=0.1
+buildNumber=1
+imagePath=launcher

@@ -1,0 +1,7 @@
+name=Shrew
+author=Simon Frost
+description=Eat 12 grams by dawn. A Dragon Quest-grammar Lore RPG.
+bundleID=com.sdwfrost.lore.shrew
+version=0.1
+buildNumber=1
+imagePath=launcher
